@@ -1,0 +1,15 @@
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\bin\Debug\net7.0\ProjectAirlineTickets.exe
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\bin\Debug\net7.0\ProjectAirlineTickets.deps.json
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\bin\Debug\net7.0\ProjectAirlineTickets.runtimeconfig.json
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\bin\Debug\net7.0\ProjectAirlineTickets.dll
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\bin\Debug\net7.0\ProjectAirlineTickets.pdb
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.csproj.AssemblyReference.cache
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.AssemblyInfoInputs.cache
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.AssemblyInfo.cs
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.csproj.CoreCompileInputs.cache
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.dll
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\refint\ProjectAirlineTickets.dll
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.pdb
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ProjectAirlineTickets.genruntimeconfig.cache
+C:\Users\33984578865\Desktop\ProjectAirlineTickets\obj\Debug\net7.0\ref\ProjectAirlineTickets.dll
