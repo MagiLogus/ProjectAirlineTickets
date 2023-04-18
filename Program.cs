@@ -5,28 +5,126 @@
 //2- Listar Passagens
 //0- Sair
 //Ao cadastrar uma passagem ao final o sistema deverá perguntar se gostaria de cadastrar uma nova passagem caso contrário voltar ao menu anterior(S/N).
-//criar um metodo para validar o login. 
 
 String usuario;
 String senha;
+String resposta;
+int opcao;
+string [] nomes = new string[5];
+string [] origem = new string[5];
+string [] destino = new string[5];
+string [] data = new string[5];
 
-//static bool validarSenha ()
-//if (true)
-//{
-    
-//}
+//Metodo
+static bool ValidarSenha(string senha)
+{
+if (senha == "123456")
+{
+Console.WriteLine("Sua senha é válida. login efetuado.");
+return true;
+}
 
+else
+{
+Console.WriteLine("Sua senha é inválida. login negado.");
+return false;
+}
+}
 
 //Login
 Console.WriteLine($"Bem-Vindo a IANES TURISMO !");
 Console.WriteLine($"Por favor, informe o seu usuário: ");
 usuario = Console.ReadLine();
+
+while (true)
+{
 Console.WriteLine($"Por favor, informe a sua senha:");
 senha = Console.ReadLine();
+if (ValidarSenha(senha))
+{
+break;
+}
+}
 
-//validarSenha();
+//Menu 
+while (true)
+{
+Console.WriteLine(@$"
+Bem-vindo {usuario} !
+=======================================
+| Selecione uma das seguintes opções: |
+| 1 - Cadastrar passagem              |
+| 2 - Listar passagens                |
+| 0 - Sair                            |
+=======================================
+");
 
+opcao = int.Parse(Console.ReadLine());
 
+while (opcao < 0 || opcao > 2)
+{
+Console.WriteLine("Opção inválida. Tente novamente.");   
+opcao = int.Parse(Console.ReadLine());
+}
 
+switch (opcao)
+{
+case 1:
+for (int i = 0; i < 5; i++)
+{
+Console.WriteLine($"");
+Console.WriteLine($"{i + 1}º Passageiro ");
+Console.WriteLine("Informe o nome:");
+nomes[i] = Console.ReadLine();
 
+Console.WriteLine("Informe a origem:");
+origem[i] = Console.ReadLine();
 
+Console.WriteLine("Informe o destino:");
+destino[i] = Console.ReadLine();
+
+Console.WriteLine("Informe a data do voo em dd/mm/aaaa:");
+data[i] = Console.ReadLine();
+
+Console.WriteLine("Passagem cadastrada com sucesso!");
+            
+Console.WriteLine("Deseja cadastrar uma nova passagem? (S/N)");
+resposta = Console.ReadLine().ToUpper();
+if (resposta != "S")
+{
+break;
+}
+}
+break;
+
+case 2: 
+if (string.IsNullOrEmpty(nomes[0]))
+{
+Console.WriteLine("Nenhuma passagem cadastrada ainda.");
+}
+else
+{
+Console.WriteLine("Passagens cadastradas:");
+for (var i = 0; i < 5; i++)
+{
+if (!string.IsNullOrEmpty(nomes[i]))
+{
+Console.WriteLine($"Passageiro: {nomes[i]}");
+Console.WriteLine($"Origem: {origem[i]}");
+Console.WriteLine($"Destino: {destino[i]}");
+Console.WriteLine($"Data do voo: {data[i]}");
+Console.WriteLine("");
+}
+}
+}
+break;
+
+case 0:
+Console.WriteLine("Saindo...");
+return;
+
+default:
+Console.WriteLine("Opção inválida. Tente novamente.");
+break;
+}
+}

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\33984578865\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj": {}
+    "C:\\Users\\Paulo Gonçalves\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\33984578865\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj": {
+    "C:\\Users\\Paulo Gonçalves\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\33984578865\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj",
+        "projectUniqueName": "C:\\Users\\Paulo Gonçalves\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj",
         "projectName": "ProjectAirlineTickets",
-        "projectPath": "C:\\Users\\33984578865\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj",
-        "packagesPath": "C:\\Users\\33984578865\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\33984578865\\Desktop\\ProjectAirlineTickets\\obj\\",
+        "projectPath": "C:\\Users\\Paulo Gonçalves\\Desktop\\ProjectAirlineTickets\\ProjectAirlineTickets.csproj",
+        "packagesPath": "C:\\Users\\Paulo Gonçalves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paulo Gonçalves\\Desktop\\ProjectAirlineTickets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\33984578865\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Paulo Gonçalves\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
