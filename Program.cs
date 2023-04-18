@@ -20,25 +20,25 @@ static bool ValidarSenha(string senha)
 {
 if (senha == "123456")
 {
-Console.WriteLine("Sua senha é válida. login efetuado.");
+Console.WriteLine("Senha correta, login efetuado !");
 return true;
 }
 
 else
 {
-Console.WriteLine("Sua senha é inválida. login negado.");
+Console.WriteLine("Senha incorreta, login negado, tente novamente !");
 return false;
 }
 }
 
 //Login
 Console.WriteLine($"Bem-Vindo a IANES TURISMO !");
-Console.WriteLine($"Por favor, informe o seu usuário: ");
+Console.Write($"Por favor, informe o seu usuário: ");
 usuario = Console.ReadLine();
 
 while (true)
 {
-Console.WriteLine($"Por favor, informe a sua senha:");
+Console.Write($"Por favor, informe a sua senha:");
 senha = Console.ReadLine();
 if (ValidarSenha(senha))
 {
@@ -67,6 +67,7 @@ Console.WriteLine("Opção inválida. Tente novamente.");
 opcao = int.Parse(Console.ReadLine());
 }
 
+//Ações do menu 
 switch (opcao)
 {
 case 1:
@@ -86,9 +87,9 @@ destino[i] = Console.ReadLine();
 Console.WriteLine("Informe a data do voo em dd/mm/aaaa:");
 data[i] = Console.ReadLine();
 
-Console.WriteLine("Passagem cadastrada com sucesso!");
+Console.WriteLine("A passagem foi cadastrada com sucesso!");
             
-Console.WriteLine("Deseja cadastrar uma nova passagem? (S/N)");
+Console.WriteLine("Desejaria cadastrar uma nova passagem? (S/N)");
 resposta = Console.ReadLine().ToUpper();
 if (resposta != "S")
 {
@@ -100,7 +101,7 @@ break;
 case 2: 
 if (string.IsNullOrEmpty(nomes[0]))
 {
-Console.WriteLine("Nenhuma passagem cadastrada ainda.");
+Console.WriteLine("Nenhuma passagem foi cadastrada ainda.");
 }
 else
 {
@@ -109,22 +110,26 @@ for (var i = 0; i < 5; i++)
 {
 if (!string.IsNullOrEmpty(nomes[i]))
 {
-Console.WriteLine($"Passageiro: {nomes[i]}");
-Console.WriteLine($"Origem: {origem[i]}");
-Console.WriteLine($"Destino: {destino[i]}");
-Console.WriteLine($"Data do voo: {data[i]}");
-Console.WriteLine("");
+Console.WriteLine(@$"
+===============================================
+                 {i+1}º Ticket                
+  Passageiro: {nomes[i]}                      
+  Origem: {origem[i]}                         
+  Destino: {destino[i]}                       
+  Data do voo: {data[i]}                      
+===============================================
+");
 }
 }
 }
 break;
 
 case 0:
-Console.WriteLine("Saindo...");
+Console.WriteLine("Efetuando logout.....");
 return;
 
 default:
-Console.WriteLine("Opção inválida. Tente novamente.");
+Console.WriteLine("A opção é inválida. Tente novamente.");
 break;
 }
 }
